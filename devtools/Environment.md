@@ -28,6 +28,28 @@ https://redis.io/commands/
 
 https://www.docker.com/
 
+> #### CentOS 安装docker v.24
+
+``` shell
+
+# 下载安装包
+
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-compose-plugin-2.18.1-1.el7.x86_64.rpm
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-buildx-plugin-0.10.4-1.el7.x86_64.rpm
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-cli-24.0.1-1.el7.x86_64.rpm
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.6.9-3.1.el7.x86_64.rpm
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-24.0.1-1.el7.x86_64.rpm
+wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-rootless-extras-24.0.1-1.el7.x86_64.rpm
+
+# 执行安装
+sudo yum -y install docker-compose-plugin-2.18.1-1.el7.x86_64.rpm
+sudo yum -y install docker-buildx-plugin-0.10.4-1.el7.x86_64.rpm
+sudo yum -y install docker-ce-cli-24.0.1-1.el7.x86_64.rpm
+sudo yum -y install containerd.io-1.6.9-3.1.el7.x86_64.rpm
+sudo yum -y install docker-ce-24.0.1-1.el7.x86_64.rpm docker-ce-rootless-extras-24.0.1-1.el7.x86_64.rpm
+```
+
+
 ### Docker仓库
 
 https://hub.docker.com/
