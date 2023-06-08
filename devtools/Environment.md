@@ -42,11 +42,9 @@ wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce
 wget https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-rootless-extras-24.0.1-1.el7.x86_64.rpm
 
 # 执行安装
-sudo yum -y install docker-compose-plugin-2.18.1-1.el7.x86_64.rpm
-sudo yum -y install docker-buildx-plugin-0.10.4-1.el7.x86_64.rpm
-sudo yum -y install docker-ce-cli-24.0.1-1.el7.x86_64.rpm
-sudo yum -y install containerd.io-1.6.9-3.1.el7.x86_64.rpm
-sudo yum -y install docker-ce-24.0.1-1.el7.x86_64.rpm docker-ce-rootless-extras-24.0.1-1.el7.x86_64.rpm
+
+sudo yum -y install docker-compose-plugin-2.18.1-1.el7.x86_64.rpm docker-buildx-plugin-0.10.4-1.el7.x86_64.rpm docker-ce-cli-24.0.1-1.el7.x86_64.rpm containerd.io-1.6.9-3.1.el7.x86_64.rpm docker-ce-24.0.1-1.el7.x86_64.rpm docker-ce-rootless-extras-24.0.1-1.el7.x86_64.rpm
+
 ```
 
 
