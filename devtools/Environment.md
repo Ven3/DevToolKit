@@ -57,14 +57,16 @@ https://hub.docker.com/
 docker镜像加速地址:  
 1. Docker中国镜像加速器: https://registry.docker-cn.com
 2. 中科大的镜像加速器: https://docker.mirrors.ustc.edu.cn/
-3. 阿里云的镜像加速器: 需要注册阿里云, 控制台 -> 容器镜像服务 -> 镜像工具 -> 镜像加速器, 传送门 -> [镜像加速器](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)
+3. 网易docker加速: http://hub-mirror.c.163.com
+4. 阿里云的镜像加速器: 需要注册阿里云, 控制台 -> 容器镜像服务 -> 镜像工具 -> 镜像加速器, 传送门 -> [镜像加速器](https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors)
 
 
-**修改`daemon.json`, 添加`registry-mirrors`节点**
+**修改`/etc/docker/daemon.json`, 添加`registry-mirrors`节点**
 ```json
 {
-    "registry-mirrors": ["https://registry.docker-cn.com"]
+  "registry-mirrors": ["https://registry.docker-cn.com","http://hub-mirror.c.163.com"]
 }
+
 ```
 **重启服务**
 
